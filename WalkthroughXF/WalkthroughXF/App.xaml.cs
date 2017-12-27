@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using WalkthroughXF.Views;
 using Xamarin.Forms;
 
 namespace WalkthroughXF
@@ -13,7 +13,8 @@ namespace WalkthroughXF
         {
             InitializeComponent();
 
-            MainPage = new WalkthroughXF.MainPage();
+            MainPage = new WalkthroughXF.MainPage(); 
+            //MainPage = new Controls.TransitionNavigationPage(new Page1());
         }
 
         protected override void OnStart()

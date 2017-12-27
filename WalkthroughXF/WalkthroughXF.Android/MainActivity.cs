@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Lottie.Forms.Droid;
 
 namespace WalkthroughXF.Droid
 {
@@ -20,6 +21,7 @@ namespace WalkthroughXF.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            AnimationViewRenderer.Init();
             LoadApplication(new App());
         }
     }
