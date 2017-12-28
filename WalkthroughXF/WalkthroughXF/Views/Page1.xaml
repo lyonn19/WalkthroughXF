@@ -2,20 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
-             x:Class="WalkthroughXF.Views.Page1">
+             xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="WalkthroughXF.Views.Page1"
+             BackgroundColor="Black"
+             Title="Lottie Anim">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <forms:AnimationView 
+        <!--<StackLayout>
+            
+            <forms:AnimationView 
                     x:Name="AnimationView" 
-                    Animation="data.json" 
+                    Animation="concierge.json" 
+                    Speed="1"
                     AutoPlay="True" Loop="true"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand" />
-            </StackLayout>
+            
             <Button 
                     Text="SlideFromBottom"
                     Command="{Binding SlideFromBottomCommand}"/>
-        </StackLayout>
+        </StackLayout>-->
+        <abstractions:CarouselViewControl Orientation="Vertical" 
+                                          InterPageSpacing="10" 
+                                          ShowIndicators="False"
+                                          Position="{Binding myPosition}" 
+                                          ItemsSource="{Binding myItemsSource}" 
+                                          VerticalOptions="FillAndExpand" 
+                                          HorizontalOptions="FillAndExpand">
+            <abstractions:CarouselViewControl.ItemTemplate>
+                <DataTemplate>
+                    <local:MyView />
+                </DataTemplate>
+            </abstractions:CarouselViewControl.ItemTemplate>
+        </abstractions:CarouselViewControl>
     </ContentPage.Content>
 </ContentPage>

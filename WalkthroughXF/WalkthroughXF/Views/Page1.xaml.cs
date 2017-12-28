@@ -17,7 +17,7 @@ namespace WalkthroughXF.Views
         {
             InitializeComponent();
 
-            BindingContext = new MainViewModel();
+            //BindingContext = new MainViewModel();
         }
 
 

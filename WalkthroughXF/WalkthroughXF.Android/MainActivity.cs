@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using CarouselView.FormsPlugin.Android;
 using Lottie.Forms.Droid;
 
 namespace WalkthroughXF.Droid
@@ -22,6 +23,7 @@ namespace WalkthroughXF.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             AnimationViewRenderer.Init();
+            CarouselViewRenderer.Init();
             LoadApplication(new App());
         }
     }

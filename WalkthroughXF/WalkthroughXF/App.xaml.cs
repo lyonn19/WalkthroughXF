@@ -13,8 +13,8 @@ namespace WalkthroughXF
         {
             InitializeComponent();
 
-            MainPage = new WalkthroughXF.MainPage(); 
-            //MainPage = new Controls.TransitionNavigationPage(new Page1());
+            //MainPage = new WalkthroughXF.MainPage(); 
+            MainPage = new Controls.TransitionNavigationPage(new Page1());
         }
 
         protected override void OnStart()
