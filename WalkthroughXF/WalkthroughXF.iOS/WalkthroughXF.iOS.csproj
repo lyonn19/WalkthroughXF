@@ -128,18 +128,6 @@
       <HintPath>..\..\packages\CarouselView.FormsPlugin.5.0.2\lib\Xamarin.iOS10\CarouselView.FormsPlugin.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Lottie.Forms, Version=1.0.6552.26958, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.4.0\lib\xamarinios\Lottie.Forms.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Lottie.Forms.iOS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.4.0\lib\xamarinios\Lottie.Forms.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Lottie.iOS, Version=1.0.6552.26959, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Com.Airbnb.iOS.Lottie.2.1.5.0\lib\xamarinios\Lottie.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
